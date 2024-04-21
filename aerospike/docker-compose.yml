@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  aerospike:
+    image: aerospike/aerospike-server:6.4
+    container_name: aerospike
+    ports:
+      - "3000-3002:3000-3002"
+    volumes:
+      - ".:/opt/aerospike/etc/"
+    command: --config-file /opt/aerospike/etc/aerospike_pre7.0.conf

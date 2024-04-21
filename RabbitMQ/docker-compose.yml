@@ -3,7 +3,7 @@ services:
   rabbitmq:
     build: .
     environment:
-      - RABBITMQ_DEFAULT_USER=pi
+      - RABBITMQ_DEFAULT_USER=dev
       - RABBITMQ_DEFAULT_PASS=password
     ports:
       # AMQP protocol port
