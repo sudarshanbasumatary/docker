@@ -2,6 +2,7 @@ version: '3'
 services:
   rabbitmq:
     build: .
+    container_name: rabbitmq
     environment:
       - RABBITMQ_DEFAULT_USER=dev
       - RABBITMQ_DEFAULT_PASS=password
