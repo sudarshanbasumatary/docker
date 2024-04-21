@@ -1,0 +1,12 @@
+version: '3'
+services:
+  rabbitmq:
+    build: .
+    environment:
+      - RABBITMQ_DEFAULT_USER=pi
+      - RABBITMQ_DEFAULT_PASS=password
+    ports:
+      # AMQP protocol port
+      - '5672:5672'
+      # HTTP management UI
+      - '15672:15672'
